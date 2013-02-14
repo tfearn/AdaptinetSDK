@@ -1,0 +1,21 @@
+.text {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana, helvetica; TEXT-DECORATION: none
+}
+.header {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px; COLOR: #ff8400; FONT-FAMILY: verdana, helvetica, sans serif; TEXT-DECORATION: none
+}
+.link {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ff8400; FONT-FAMILY: verdana, helvetica; TEXT-DECORATION: underline
+}
+.footer {
+	FONT-SIZE: 10px; COLOR: black; FONT-FAMILY: verdana, helvetica; BACKGROUND-COLOR: white; TEXT-DECORATION: none; bgcolor: white
+}
+.footerlink {
+	FONT-SIZE: 10px; COLOR: #ff8400; FONT-FAMILY: verdana, helvetica; TEXT-DECORATION: none
+}
+.footerorange {
+	FONT-SIZE: 10px; COLOR: white; FONT-FAMILY: verdana, helvetica; BACKGROUND-COLOR: #ff8400; TEXT-DECORATION: none; bgcolor: #FF8400
+}
+.graybar {
+	BACKGROUND-IMAGE: url(images/gray.gif); BACKGROUND-REPEAT: repeat-y
+}

@@ -1,0 +1,16 @@
+com.adaptinet.adaptinetex
+com.adaptinet.http
+com.adaptinet.jarutils
+com.adaptinet.licensemgr
+com.adaptinet.loader
+com.adaptinet.messaging
+com.adaptinet.mimehandlers
+com.adaptinet.parser
+com.adaptinet.pluginagent
+com.adaptinet.plugins
+com.adaptinet.registry
+com.adaptinet.repository
+com.adaptinet.socket
+com.adaptinet.transceiver
+com.adaptinet.transceiverutils
+com.adaptinet.xmlutils

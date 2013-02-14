@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0048)menu2.html -->
+<HTML>
+<HEAD>
+<TITLE>index.gif</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<SCRIPT language=JavaScript>
+<!-- hide
+
+	controlroll = 'rollyes';
+	settingsroll = 'rollyes';
+	pluginsroll = 'rollyes';
+	peersroll = 'rollyes';
+	statusroll = 'rollyes';
+	passwordroll = 'rollyes';
+
+	function rollcheck(imgname,directory,rollnum) {
+	rollname = eval(imgname + 'roll');
+	if (rollname == "rollyes") {
+		if (rollnum == "1") {
+		MM_swapImage(imgname,'',directory,1);
+		}
+		else {
+		MM_swapImgRestore();
+		}
+	} 
+	else {}
+	}
+
+
+
+	function MM_findObj(n, d) { //v3.0
+	  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+	    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+	}
+
+	function MM_swapImage() { //v3.0
+	  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+	   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+	}
+	function MM_swapImgRestore() { //v3.0
+	  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	}
+
+
+
+
+
+	function swap(imgname) {
+
+	if (imgname == 'control') {
+	controlroll = 'rollno';
+	settingsroll = 'rollyes';
+	pluginsroll = 'rollyes';
+	peersroll = 'rollyes';
+	statusroll = 'rollyes';
+	passwordroll = 'rollyes';
+	document.control.src = control_f2.src;
+	document.settings.src = settings_f1.src;
+	document.plugins.src = plugins_f1.src;
+	document.peers.src = peers_f1.src;
+	document.status.src = status_f1.src;
+	document.password.src = password_f1.src;
+	}
+	if (imgname == 'settings') {
+	controlroll = 'rollyes';
+	settingsroll = 'rollno';
+	pluginsroll = 'rollyes';
+	peersroll = 'rollyes';
+	statusroll = 'rollyes';
+	passwordroll = 'rollyes';
+	document.settings.src = settings_f2.src;
+	document.control.src = control_f1.src;
+	document.plugins.src = plugins_f1.src;
+	document.peers.src = peers_f1.src;
+	document.status.src = status_f1.src;
+	document.password.src = password_f1.src;
+	}
+	if (imgname == 'plugins') {
+	controlroll = 'rollyes';
+	settingsroll = 'rollyes';
+	pluginsroll = 'rollno';
+	peersroll = 'rollyes';
+	statusroll = 'rollyes';
+	passwordroll = 'rollyes';
+	document.plugins.src = plugins_f2.src;
+	document.control.src = control_f1.src;
+	document.settings.src = settings_f1.src;
+	document.peers.src = peers_f1.src;
+	document.status.src = status_f1.src;
+	document.password.src = password_f1.src;
+	}
+	if (imgname == 'peers') {
+	controlroll = 'rollyes';
+	settingsroll = 'rollyes';
+	pluginsroll = 'rollyes';
+	peersroll = 'rollno';
+	statusroll = 'rollyes';
+	passwordroll = 'rollyes';
+	document.peers.src = peers_f2.src;
+	document.control.src = control_f1.src;
+	document.settings.src = settings_f1.src;
+	document.plugins.src = plugins_f1.src;
+	document.status.src = status_f1.src;
+	document.password.src = password_f1.src;
+	}
+	if (imgname == 'status') {
+	controlroll = 'rollyes';
+	settingsroll = 'rollyes';
+	pluginsroll = 'rollyes';
+	peersroll = 'rollyes';
+	statusroll = 'rollno';
+	passwordroll = 'rollyes';
+	document.status.src = status_f2.src;
+	document.control.src = control_f1.src;
+	document.settings.src = settings_f1.src;
+	document.plugins.src = plugins_f1.src;
+	document.peers.src = peers_f1.src;
+	document.password.src = password_f1.src;
+	}
+
+	if (imgname == 'password') {
+	controlroll = 'rollyes';
+	settingsroll = 'rollyes';
+	pluginsroll = 'rollyes';
+	peersroll = 'rollyes';
+	statusroll = 'rollyes';
+	passwordroll = 'rollno';
+	document.status.src = status_f2.src;
+	document.control.src = control_f1.src;
+	document.settings.src = settings_f1.src;
+	document.plugins.src = plugins_f1.src;
+	document.peers.src = peers_f1.src;
+	document.status.src = status_f1.src;
+	}		
+	}
+/*
+menubar = new Array;
+menubar[0] = 'control';
+menubar[1] = 'settings';
+menubar[2] = 'plugins';
+menubar[3] = 'peers';
+menubar[4] = 'status';
+menubar[5] = 'password';
+
+function swap(imgname) {
+var num = 0;
+menubarroll = eval(menubar[num] + 'roll');
+	while (num != "5") {
+		if (menubar[num] == imgname) {
+		menuimg = menubar[num];
+		document[menuimg].src = eval(menuimg + '_f2.src');	
+		menubarroll = 'rollno';
+		}
+		else {
+		
+		menuimg = menubar[num];
+		document[menuimg].src = eval(menuimg + '_f1.src');	
+		
+		}
+		num = num + 1;
+	}
+
+}
+
+*/
+// stop hiding -->
+</SCRIPT>
+
+<META content="MSHTML 6.00.2462.0" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff leftMargin=0 topMargin=0 onload="" marginwidth="0" marginheight="0">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD><IMG height=115 src="images/header_pic.gif" width=408 border=0 
+      name=header_pic></TD>
+    <TD align=right width="100%"><A 
+      href="./main.html" target=main><IMG 
+      height=115 src="images/logo.gif" width=303 border=0 
+  name=logo></A></TD></TR>
+  <TR>
+    <TD vAlign=top align=left width=408>
+      <TABLE cellSpacing=0 cellPadding=0 width=408 align=left border=0>
+        <SCRIPT language=JavaScript>
+  <!-- hide 
+  if (document.images) {
+  control_f2 = new Image(106 ,26); control_f2.src = "images/control_f2.gif";
+  control_f1 = new Image(106 ,26); control_f1.src = "images/control.gif";
+  settings_f2 = new Image(71 ,26); settings_f2.src = "images/settings_f2.gif";
+  settings_f1 = new Image(71 ,26); settings_f1.src = "images/settings.gif";
+  plugins_f2 = new Image(71 ,26); plugins_f2.src = "images/plugins_f2.gif";
+  plugins_f1 = new Image(71 ,26); plugins_f1.src = "images/plugins.gif";
+  peers_f2 = new Image(71 ,26); peers_f2.src = "images/peers_f2.gif";
+  peers_f1 = new Image(71 ,26); peers_f1.src = "images/peers.gif";
+  status_f2 = new Image(85 ,26); status_f2.src = "images/status_f2.gif";
+  status_f1 = new Image(85 ,26); status_f1.src = "images/status.gif";
+  password_f2 = new Image(85 ,26); password_f2.src = "images/password_f2.gif";
+  password_f1 = new Image(85 ,26); password_f1.src = "images/password.gif";
+  }
+  // stop hiding -->
+  </SCRIPT>
+
+        <TBODY>
+        <TR>
+          <TD><A onmouseover="rollcheck('control','images/control_f2.gif',1)" 
+            onclick="swap('control')" 
+            onmouseout="rollcheck('control','images/control_f2.gif',0)" 
+            href="control.html" 
+            target=main><IMG style="WIDTH: 106px; HEIGHT: 
+            26px" height=26 src="images/control.gif" width=106 border=0 name=control ></A></TD>
+          <TD><IMG height=26 src="images/space.gif" width=1 border=0></TD>
+          <TD><A onmouseover="rollcheck('settings','images/settings_f2.gif',1)" 
+            onclick="swap('settings')" 
+            onmouseout="rollcheck('settings','images/settings_f2.gif',0)" 
+            href="configuration.html" 
+            target=main><IMG style="WIDTH: 109px; HEIGHT: 
+            26px" height=26 src="images/settings.gif" width=71 border=0 name=settings ></A></TD>
+          <TD><IMG height=26 src="images/space.gif" width=1 border=0></TD>
+          <TD><A onmouseover="rollcheck('plugins','images/plugins_f2.gif',1)" 
+            onclick="swap('plugins')" 
+            onmouseout="rollcheck('plugins','images/plugins_f2.gif',0)" 
+            href="plugins.html" 
+            target=main><IMG style="WIDTH: 106px; HEIGHT: 
+            26px" height=26 src="images/plugins.gif" width=71 border=0 name=plugins ></A></TD>
+          <TD><IMG height=26 src="images/space.gif" width=1 border=0></TD>
+          <TD><A onmouseover="rollcheck('peers','images/peers_f2.gif',1)" 
+            onclick="swap('peers')" 
+            onmouseout="rollcheck('peers','images/peers_f2.gif',0)" 
+            href="peers.html" 
+            target=main><IMG style="WIDTH: 105px; HEIGHT: 
+            26px" height=26 src="images/peers.gif" width=71 border=0 name=peers ></A></TD>
+          <TD><IMG height=26 src="images/space.gif" width=1 border=0></TD>
+          <TD><A 
+            onmouseover="rollcheck('status','images/status_f2.gif',1)" 
+            onclick="swap('status')" 
+            onmouseout="rollcheck('status','images/status_f2.gif',0)" 
+            href="monitor.html" 
+            target=main><IMG style="WIDTH: 111px; HEIGHT: 
+            26px" height=26 src="images/status.gif" width=85 border=0 name=status ></A></TD>
+          <TD><IMG height=26 src="images/space.gif" width=1 border=0></TD>
+          <TD><A 
+            onmouseover="rollcheck('password','images/password_f2.gif',1)" 
+            onclick="swap('password')" 
+            onmouseout="rollcheck('password','images/password_f2.gif',0)" 
+            href="password.html" 
+            target=main><IMG style="WIDTH: 94px; HEIGHT: 
+            26px" height=26 src="images/password.gif" width=85 border=0 name=password ></A></TD></TR>
+        <TR>
+          <TD><IMG height=14 src="images/space.gif" width=106 border=0></TD>
+          <TD><IMG height=14 src="images/orange1.gif" width=1 border=0 
+            name=orange1></TD>
+          <TD><IMG height=14 src="images/space.gif" width=71 border=0></TD>
+          <TD><IMG height=14 src="images/orange2.gif" width=1 border=0 
+            name=orange2></TD>
+          <TD><IMG height=14 src="images/space.gif" width=71 border=0></TD>
+          <TD><IMG height=14 src="images/orange3.gif" width=1 border=0 
+            name=orange3></TD>
+          <TD><IMG height=14 src="images/space.gif" width=71 border=0></TD>
+          <TD><IMG height=14 src="images/orange4.gif" width=1 border=0 
+            name=orange4></TD>
+          <TD><IMG height=14 src="images/space.gif" width=71 border=0></TD>
+          <TD><IMG height=14 src="images/orange4.gif" width=1 border=0 
+            name=orange4></TD>
+          <TD><IMG height=14 src="images/space.gif" width=1 
+        border=0></TD></TR></TBODY></TABLE></TD>
+    <TD vAlign=top align=right width="100%">
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD width="100%" background=images/orange_header.gif><IMG 
+            height=26 src="images/space.gif" width=1 border=0></TD></TR>
+        <TR>
+          <TD width="100%"><IMG height=14 src="images/space.gif" width=1 
+            border=0></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+            
+</BODY>
+</HTML>

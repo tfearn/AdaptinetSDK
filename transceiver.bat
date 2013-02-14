@@ -1,0 +1,1 @@
+java -cp .\adaptinet.jar com.adaptinet.transceiver.Transceiver -config transceiver.properties

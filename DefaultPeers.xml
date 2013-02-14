@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Peers>
+	<Peer>
+		<URI>http://localhost:8082</URI>
+		<Name>localhost:8082</Name>
+		<Time/>
+	</Peer>
+</Peers>

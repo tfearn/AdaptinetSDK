@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Plugins>
+	<Plugin>
+		<Name>HelloWorld</Name>
+		<Description>HellowWorld</Description>
+		<Type>Samples.HelloWorld.HelloWorld</Type>
+		<Classpath>samples.jar</Classpath>
+		<Preload>1</Preload>
+	</Plugin>
+	<Plugin>
+		<Name>Chat</Name>
+		<Description>Chat</Description>
+		<Type>Samples.Chat.Chat</Type>
+		<Classpath>samples.jar</Classpath>
+		<Preload>0</Preload>
+	</Plugin>
+</Plugins>
